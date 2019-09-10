@@ -29,7 +29,7 @@ like
 ```c
 uint32_t i, j;
 for(i = 0; i < height; i++) {
-    for(j = 0; j < (width * bpp); j+=4) {
+    for(j = 0; j < (width * bpp); j+=3) {
         uint8_t red = buffer[i * j];
         uint8_t blue = buffer[i * j + 1];
         uint8_t green = buffer[i * j + 2];
